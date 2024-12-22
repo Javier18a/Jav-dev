@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 body{
@@ -146,6 +146,53 @@ main{
     text-shadow: 0 0 30px cyan;
   }
 
+  .titulo-experience{
+    margin: 30px;
+    font-size: 40px; 
+    color: cyan;
+    text-shadow: 0 0 30px cyan;  
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+   }
+
+   .experience{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .info-experience{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .icon-experience{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .iconos-experience i{
+    margin: 10px;
+    font-size: 40px;
+  }
+
+  .iconos-experience span{
+    font-size: 20px;
+  }
+
+  .info-experience > h2,
+  .icon-experience > h2{
+    margin-bottom: 30px;
+  }
+
   .areas{
     height: 90vh;
     background: #0004287a;
@@ -210,57 +257,6 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-
-   .areas .type-area:nth-child(1) ul li:nth-child(4){
-    opacity: 0;
-   }
-
-   .titulo-experience{
-    margin: 30px;
-    font-size: 40px; 
-    color: cyan;
-    text-shadow: 0 0 30px cyan;  
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-   }
-
-   .experience{
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   }
-
-   .info-experience{
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   }
-
-   .icon-experience{
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .iconos-experience i{
-    margin: 10px;
-    font-size: 40px;
-  }
-
-  .iconos-experience span{
-    font-size: 20px;
-  }
-
-  .info-experience > h2,
-  .icon-experience > h2{
-    margin-bottom: 30px;
   }
 
   .projects{
