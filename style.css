@@ -533,12 +533,6 @@ main{
     height: 40px;
   }
 
-  /* Solución de bug en las targetas de proyectos */
-
-  .type-projects .target:nth-child(1){
-    margin-left: 1600px;
-  }
-
   .Redes{
     flex-direction: column;
     height: 60vh;
