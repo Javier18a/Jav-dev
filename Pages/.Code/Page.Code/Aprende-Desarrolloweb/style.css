@@ -1,0 +1,1307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+body {
+    background:#1f2124;
+    color: white;
+}
+
+header {
+    width: 100%;
+    justify-content: flex-end;
+    color: white;    
+    background: #393d42;
+}
+
+.logo h1 {
+    margin-left: 20px;
+}
+
+.container__menu{
+    width: 100%;
+    height: 70px;
+    background: #393d42;
+    padding: 0px 20px;   
+}
+
+.menu {
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.menu > .aprende {
+    max-width: 100%;
+    margin: auto;
+    height: 100%;    
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display:flex ;
+    justify-content: flex-end; 
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+}
+
+nav ul li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul >li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul >.aprende{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul >li > a:hover {
+    transform: scale(1.1);
+    background: #393d42;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+nav > ul >.aprende:hover {
+    transform: scale(1.1);
+    background: #393d42;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*Submenu*/
+
+nav ul li ul {
+    width: 100px;
+    display: flex;
+    flex-direction: column; 
+    background: white;   
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white ;
+    position: absolute; 
+    top: -11px ;
+    left: 20px;
+}
+
+nav ul li ul li a {
+    display: block;
+    color: black;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px ;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover {
+    background: #6a6e73;
+    color: black;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.icon__menu {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#check__menu{
+    display: none;
+}
+
+#lable__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+
+}
+
+/*Aprende*/
+
+.presentacion {
+
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/*Main*/
+
+main {
+    margin: 20px;
+    min-height: 250px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.img-introduction {
+    display: flex;
+}
+
+.img-intro{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+.Que{
+    display: flex;
+    height: 200px;
+}
+
+main p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+    margin: 20px;
+    color: white;
+}
+
+section {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    background: #393d42; 
+}
+
+section p {
+    margin-left: 40px;
+    width: 350px;
+    font-size: 17px;
+    color: white;
+}
+
+.que-es {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.What{
+    margin-top: 10px;
+    font-size: 17px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.What p {
+    width: 500px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: white;
+}
+
+/* Pagina HTML*/
+
+.Presentacio-html {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.main-html{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+
+.main-html i{
+    font-size: 120px;
+}
+
+.html {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 500px;
+}
+
+.html p {
+    width: 480px;
+}
+
+.Qes-html {
+    margin-top: 30px;
+    text-align: center;
+}
+.imagen-html{
+    display: flex;
+}
+
+.img-html{
+
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+/* Que son las etiquetas */
+
+.etiquetas-html {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.etiquetas{
+    min-height: 270px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.etiquetas p {
+    width: 450px;
+    color: white;
+}
+
+
+/* Tabla de etiquetas */
+
+.tabla-etiquetas {
+    text-align: center;
+   
+}
+
+.tabla-etiquetas p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+table {
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+td{
+    border: 1px solid black;
+    background: #393d42;
+    padding: 3px;
+}
+
+th {
+    border: 1px solid black;
+    background: #393d42;
+    padding: 3px;
+}
+
+.titulo-etiquetas {
+    text-align: center;
+    border: 2px solid black;
+}
+
+/*Ejemplos de los usos de las etiquetas*/
+
+.ejemplos-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ejemplos-titulo p {
+    text-align: center;
+    font-size: 27px;
+}
+
+#contenedor{
+    height: 250px;
+    overflow: hidden;
+    color: black;
+    align-items: center;
+}
+
+.carrusel{
+    top: 10px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carrusel a{
+    text-decoration: none;
+    color: white;
+}
+
+.tarjetas{
+    height: 200px;
+    min-width: 400px;
+    padding: 10px;
+    background: #393d42;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.tarjetas p {
+    display: flex;
+    text-align: center;
+}
+
+.pre-ejemplo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-etiqueta {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin-bottom: 10px;
+}
+
+.flechas{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.inf-ejemplo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Atributos*/
+
+.atributos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+
+.titulo-atributo {
+    text-align: center;
+    margin: 10px;
+}
+
+.q-atributo{
+    width: 310px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabla-atributo{
+    text-align: center;
+}
+
+.c-u-s{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.target-selector{
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.target-selector h2{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.target-selector p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/*Css*/
+
+.sección-css{
+    display: flex;
+    flex-direction: column;
+}
+
+.Presentación-css{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.main-css{
+    display: flex;
+    flex-direction: column;
+}
+
+.Q-css{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Q-css i{
+    font-size: 120px;
+}
+
+.sección{
+    margin: 10px;
+}
+
+.img-css{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.css {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+}
+
+.funcion-css{
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.funcion-css p {
+    display: flex;
+    width: 450px;
+    margin: 20px;
+}
+
+.c-f{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.u-s{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.uso-selector{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.uso-selector p {
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+}
+
+.como-us{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 35px;
+}
+
+.ejemplo-css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.codigo-css{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.codigo-css p{
+    margin: 5px;
+}
+
+.tipos-e{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.estilos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.estilos p{
+    width: 550px;
+}
+
+.style{
+    margin-top: 10px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    background: #393d42;
+}
+
+.como-usar-codigos{
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.style-ejemplo{
+    margin: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-estilos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ancho{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    background: #6a6e73;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+
+.altura{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    background: #6a6e73;
+    border-left: 5px solid white;
+    border-right: 5px solid white;    
+}
+
+.colores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.letra-nombre,
+.letra-codigo{
+    background: #6a6e73;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.letra-nombre p,
+.letra-codigo p{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #ffff00;   
+}
+
+.fondo-nombre,
+.fondo-codigo{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background: #ffff00;
+}
+
+.fondo-nombre p,
+.fondo-codigo p{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: black;   
+}
+
+.tipos-selector-css{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+
+.titulo-tipos-selector{
+    text-align: center;
+    margin: 10px;
+}
+
+.tipos-selector{
+    width: 450px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fuente-de-letra{
+    margin-left: 40px;
+    width: 150px;
+    height: 150px;
+    border: solid 1px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: oblique bold 120% cursiva;
+}
+
+.posicion{
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+    margin-left: 70px;
+    border: solid 1px white;
+}
+
+.ejemplo-posicion{
+    width: 150px;
+    position: relative;
+    top: 55px;
+}
+
+.ejemplo-posicion p{
+    margin: 2px;
+}
+
+.posicion-arriba{
+    width: 150px;
+    height: 50px;
+    border: 1px solid blue;
+    position: relative;
+    top: 110px;
+}
+
+.posicion-abajo{
+    width: 150px;
+    height: 50px;
+    border: 1px solid blue;
+    position: relative;
+    bottom: 142px;
+}
+
+.posicion-derecha{
+    width: 50px;
+    height: 150px;
+    border: 1px solid blue;
+    position: relative;
+    right: 53px;
+    bottom: 141px;
+}
+
+.posicion-izquierda{
+    width: 50px;
+    height: 150px;
+    border: 1px solid blue;
+    position: relative;
+    bottom: 291px;
+    left: 150px;
+}
+
+.posicion-abajo,
+.posicion-arriba,
+.posicion-derecha,
+.posicion-izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posicion-abajo p,
+.posicion-arriba p,
+.posicion-derecha p,
+.posicion-izquierda p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-bordes{
+    display: flex;
+}
+
+.borde{
+    width: 170px;
+    height: 170px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #393d42;
+    border: 2px solid blue;
+}
+
+.borde-radius{
+    width: 170px;
+    height: 170px;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #393d42;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+
+
+/*Ejemplo-fin del codigo*/
+
+.logos-ejemplo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-ejemplo i{
+    font-size: 120px;
+    margin: 5px;
+}
+
+.presentacion-ejemplo{
+    margin: auto;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentacion-ejemplo h2{
+    margin-bottom: 20px;
+}
+
+.ejemplo-estructura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejemplo-estructura h1{
+    margin-top: 20px;
+}
+
+.contenido-ejemplo-code{
+    margin: auto;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Fin{
+    border-top: 2px solid white;
+    display: flex;
+    align-items: end;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+  
+.social-icons {
+    display: flex;
+    flex-direction: row ;
+}
+
+.social-icons a{
+    margin: 3px;
+}
+  
+.info-contacto{
+    margin: auto;
+    width: 520px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.contacto {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    display: flex;    
+    flex-direction: column;
+}
+  
+.contact-info {
+    margin: 0px;
+    padding: 0px;
+}
+  
+.social-icons i{
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+}
+
+.social-icons .icon:nth-child(1){
+    color: green;
+    text-shadow: 
+    0 0 5px greenyellow,
+    0 0 25px greenyellow,
+    0 0 100px greenyellow;
+}
+
+.social-icons .icon:nth-child(2){
+    color: purple;
+    text-shadow: 
+    0 0 5px plum,
+    0 0 25px plum,
+    0 0 100px plum;
+}
+
+.social-icons .icon:nth-child(3){
+    color: blue;
+    text-shadow: 
+    0 0 5px aqua,
+    0 0 25px aqua,
+    0 0 100px aqua;
+}
+
+footer {
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        font-size: 15px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        background: #6a6e73;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul >li > a {
+        color:white;
+    }
+    
+    nav > ul >.aprende{
+        color: white;        
+    }
+
+    nav > ul > li > a:hover {
+        transform: scale(1);
+    }
+
+    nav > ul >.aprende:hover {
+        transform: scale(1);
+    }
+
+    nav ul li ul {
+        left: 90px;
+       
+    }
+
+    nav > ul > li:hover ul { 
+        left: 100px;
+    }
+
+    nav ul li ul:before {
+        display: none;
+    }
+
+    nav ul li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        top: 5px;
+    }
+
+    #lable__check {
+        display: block;
+    }
+
+    .icon__menu {
+        display: flex;
+        color: white;            
+    }
+
+    #check__menu:checked ~ nav > ul {
+        height: 300px;
+        visibility: visible ; 
+        opacity: 1;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    section {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section img {
+        margin-top: 10px;
+    }
+
+    section p {
+        display: flex;
+        max-width: 310px;
+        margin-top: 20px;
+        margin-bottom: 20px;            
+    }
+
+    .What {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .What p {
+        max-width: 310px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Que img{
+        
+        max-width: 300px;
+    }
+
+    /*HTML*/
+
+    .main-html{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+    .html {
+        max-width: 340px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .html p {
+        max-width: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Que son las etiquetas */
+
+    .etiquetas {
+        max-width: 100%;
+        color: white;
+        background: #393d42;
+        margin-bottom: 20px;
+    }
+
+    .etiquetas p {
+        display: flex;
+        max-width: 310px;
+    }
+
+    /* Tabla de etiquetas */
+
+    table {
+        max-width: 100%;
+        color: white;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    /*Ejemplos*/
+
+    .ejemplos-titulo {
+        text-align: center;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .flechas{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .flechas > a > i{
+        background: rgba(0, 0, 0, 0.473);
+        border: 1px solid white;
+    }
+
+    .tarjetas{
+        max-width: 310px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .tarjetas p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .inf-ejemplo p{
+        text-align: center;        
+        align-items: center;
+    }
+
+    /*atributo*/
+
+    .q-atributo{
+        max-width: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .funcion-css {
+        max-width: 100%;
+        color: white;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .funcion-css h1{
+        margin-bottom: 20px;
+    }
+
+    .funcion-css p {
+        display: flex;
+        max-width: 305px;
+    }
+
+    .c-u-s{
+        flex-direction: column;
+    }
+
+    .ejemplo-css{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .codigo-css{
+        flex-direction: row;
+    }
+
+    /*CSS*/
+
+    .Q-css{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .css {
+        margin: 0;
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uso-selector p {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        max-width: 310px;
+    }
+
+    .como-us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-size: 35px;
+    }
+
+    .estilos p{
+        width: 300px;
+    }
+
+    .contenedor-estilos{
+        flex-direction: column;
+    }
+
+    .contenedor-flex{
+        flex-direction: column;
+    }
+
+    .como-usar-codigos{
+        margin: auto;
+        margin-top: 10px;
+        max-width: 310px;
+    }
+
+    .tipos-selector{
+        max-width: 310px;
+    }
+
+    .fuente-de-letra{
+        margin-top: 30px;
+    }
+
+    .posicion{
+        margin: 0;
+        margin-top: 70px;
+    }
+
+    .borde{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .borde-radius{
+        width: 120px;
+        height: 120px;
+    }
+
+    .presentacion-ejemplo{
+        max-width: 300px;
+    }
+
+    .info-contacto{
+        max-width: 300px;
+    }
+
+    .contenido-ejemplo-code{
+        display: flex;
+        max-width: 300px;
+    }
+
+}

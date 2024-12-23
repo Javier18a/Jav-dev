@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+* h1{
+    font: oblique bold 130% cursiva;
+}
+
+body{
+    background: #141e30; 
+    background: -webkit-linear-gradient(to right, #141e30, #243b55); 
+    background: linear-gradient(to right, #141e30, #243b55); 
+    
+}
+
+header {
+    width: 100%;
+    justify-content: flex-end;
+    color: white;    
+    position: absolute;
+    background: rgba(0, 0, 0, 0.247);
+}
+
+.logo h1 {
+    margin-left: 20px;
+}
+
+.container__menu{
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px;   
+}
+
+.menu {
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display:flex ;
+    justify-content: flex-end; 
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+}
+
+nav ul li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul >li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul >.aprende{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul >li > a:hover {
+    transform: scale(1.1);
+    background: #bdc3c7;
+    color: black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+nav > ul >.aprende:hover {
+    transform: scale(1.1);
+    background: #bdc3c7;
+    color: black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* Submenu */
+
+nav ul li ul {
+    width: 100px;
+    display: flex;
+    flex-direction: column; 
+    background: white;   
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white ;
+    position: absolute; 
+    top: -11px ;
+    left: 20px;
+}
+
+nav ul li ul li a {
+    display: block;
+    color: black;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px ;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover {
+    background: #2c3e50;
+    color: white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.icon__menu {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#check__menu{
+    display: none;
+}
+
+#lable__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+main {
+    background-image: 
+        linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main h1{
+    font-size: 55px;
+    color: white;
+    text-shadow: 
+    0 0 5px blue,
+    0 0 25px blue,
+    0 0 50px blue,
+    0 0 100px blue;
+}
+
+main div{
+    text-align: center;
+}
+
+.quienes_somos{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_quienes_somos{
+    width: 600px;
+    height: 350px;
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_quienes_somos h1 {
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 
+    0 0 5px blue,
+    0 0 25px blue,
+    0 0 50px blue,
+    0 0 100px blue;
+}
+
+.content_quienes_somos p{
+    text-align: justify;
+    width: 500px;
+    color: white;
+}
+
+.grupo{
+    width: 400px;
+    height: 430px;
+}
+
+.nosotros{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.we{
+    padding: 10px;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.we p {
+    color: white;
+}
+
+.we h1{
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 
+    0 0 5px blue,
+    0 0 25px blue,
+    0 0 50px blue,
+    0 0 100px blue;
+}
+
+
+/*Servicios*/
+
+.servicios{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.target-servicios{
+    margin: 20px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-servicio{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+
+
+/************************/
+/*    PAGE PROYECTOS    */
+/************************/
+
+.gallery{
+    min-height: 60vh;
+    background: #141e30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px 0;
+    list-style: none;
+}
+
+.gallery .controls .buttons{
+    height:40px;
+    width: 140px;
+    background:#fff;
+    color:#666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin:20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.gallery .controls .buttons.active{
+    background: #2c3e50;
+    box-shadow:
+    0 0 5px blue,
+    0 0 25px blue;
+    color:black;
+}
+
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .image{
+    height:300px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 0 20px black;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.gallery .image-container .image img{
+    height: 150px;
+    width:100%;
+    object-fit: cover;
+}
+
+.info-proyecto{
+    color: white;
+}
+
+footer{
+    color: white;
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+        font-size: 10px;
+    }
+
+    header {
+        font-size: 15px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.5);
+        position: fixed;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul >li > a {
+        color:white;
+    }
+    
+    nav > ul > li > a:hover {
+        transform: scale(1);
+    }
+
+    nav ul li ul {
+        left: 90px;
+    }
+
+    #lable__check {
+        display: block;
+    }
+
+    .icon__menu {
+        display: flex;
+        color: white;            
+    }
+
+    #check__menu:checked ~ nav > ul {
+        height: 300px;
+        visibility: visible ; 
+        opacity: 1;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    main h1{
+        font-size: 30px;
+    }
+
+    .quienes_somos{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content_quienes_somos{
+        max-width: 330px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content_quienes_somos h1{
+        font-size: 25px;
+    }
+
+    .content_quienes_somos p{
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .grupo{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        max-width: 300px;
+        height: 430px;
+        border: 2px solid ;
+    }
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .we{
+        margin-top: 30px;
+        max-height: 330px;
+        font-size: 14px;
+    }
+
+    .servicios{
+        font-size: medium;
+    }
+
+
+    .gallery{
+        height: 60vh;
+        flex-direction: row;
+    }
+
+    .image-container{
+        height: 60vh;
+    }
+
+    .controls{
+        display: none;
+        overflow: hidden;
+    }
+
+    .buttons{
+        display: none;
+        overflow: hidden;
+    }
+
+    .gallery .image-container{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        align-items: center;
+    }
+
+    .image {
+        flex: 1 0 auto;
+        margin: 0 20px;
+    }
+
+    .image::-webkit-scrollbar{
+        height: 1px;
+      }
+
+      .gallery .image-container .grupo:nth-child(1){
+        margin-left: 4100px;
+      }
+
+    .gallery .image-container .image{
+        margin: 5px;
+        max-width: 260px;
+        max-height: 300px;
+    }
+
+    .gallery .image-container .image a{
+        border: none;
+        box-shadow: 0 0 20px black;
+    }
+
+    .gallery .image-container .image h2{
+        font-size: 18px;
+    }
+
+    .gallery .image-container .image p{
+        font-size: 14px;
+    }
+}

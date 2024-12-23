@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Aprende Css</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1 translate="no"> < Page.Code/></h1>
+        </div>
+
+        <div class="container__menu">
+
+            <div class="menu">
+
+            <input type="checkbox" id="check__menu">
+            <label id="lable__check"  for="check__menu">
+            <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+
+                        <li class="aprende"> Aprende
+                        <ul>
+                            <li><a href="./html.html">HTML</a></li>
+                            
+                            <li><a href="./CSS.html">CSS</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a href="./Ejemplo.html">Ejemplo</a></li>
+
+                        <li><a href="./contacto.html">Contactos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="Presentación-css">
+        <p>Aprende CSS</p>
+    </div>
+
+    <main class="main-css">
+         <h1>Qué es CSS?</h1> 
+        <div class="Q-css">
+            <i class="fa-brands fa-css3-alt" style="color: #1029e5;"></i>
+            <p class="css">CSS, también conocido como hoja de estilos en cascada, este lenguaje es utilizado para poder darle color, formas e estilos, aprender css es un buen comienzo si estas interesado en el desarrollo web, al aprenderlo tendrás una gran variedad de animaciones y estilos sin limites para que los puedas implementar en tu página. </p>
+        </div>
+    </main>
+
+    <div class="funcion-css"> 
+        <h1>Como funciona Css?</h1> 
+        <p> Css funciona como el complemento de HTML, mientras html se encarga de la estructuración de un sitio web, css es el encargado de realizar los cambios visuales.</p>
+    </div>
+
+    <h1 class="u-s">Uso de Selector</h1>
+
+    <div class="uso-selector">
+        <p>Los selectores tienen su propia forma de ser llamados en una hoja de estilos a como lo es css, como anteriormente se menciono, un selector es aquel con el que le daremos un nombre a una de nuestras etiquetas y poder seleccionarla sin afectar a las demás. <br><br> Los selectores "class" en la hoja de estilos son llamados por un punto, seguido del nombre asignado, al igual que los selectores "id" pero estos son llamados por un numeral (#). </p>
+    </div>
+
+    <div class="ejemplo-css">
+        <h1>Como usar los selectores?</h1>
+        <div class="codigo-css">  
+
+            <div>
+                <p>HTML <br>
+                < div class="div">< /div> 
+                </p> <br>
+                <p>HTML <br>
+                < div id="div">< /div>
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>CSS <br>
+                .div {}</p> <br>
+                <p>CSS <br>
+                #div {}
+                </p> 
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="tipos-selector-css">
+
+        <h1 class="titulo-tipos-selector">Tipos de selectores en css</h1>
+        <p class="tipos-selector">Los tipos de selectores nos ayudaran a poder darle nuestros propios estilos a nuestro proyecto, dentro de ellos se pueden poner todo los estilos que se necesiten para lograr obtener el resultado que buscas.</p>
+
+        <table border="2">
+
+            <tr class="tabla-atributo"><td colspan="2">Atributos HTML</td></tr>
+
+            <th>Selector</th>
+            <th>Implementación</th>
+
+            <tr> 
+            <td> *{}</td>
+            <td> selector universal, este selector en css <br> es el que puede abarcar todos los estilos <br> de la pagina. <br> Ejemplo: *{margin: 0; padding: 0; }</td>
+            </tr>
+
+            <tr> 
+            <td> h1{}</td>
+            <td> Selector de tipo, este abarcara todas las <br> etiquetas del mismo tipo</td>
+            </tr>
+
+            <tr> 
+            <td> .h1{}</td>
+            <td> Selector de clase, este se define por un <br> punto y el nombre de la clase</td>
+            </tr>
+
+            <tr> 
+            <td> #h1{}</td>
+            <td> Selector de identificador, este se define <br> por un numeral y el nombre de la <br> identificador usado.</td>
+            </tr>
+
+            <tr> 
+            <td> h1 > p{}</td>
+            <td> Selector de hijo directo, Este selector <br> funciona con los selectores de tipo, <br> clase y de identificador. Este nos indica <br> que toda etiqueta hijas directas, recibirá <br> un estilo.</td>
+            </tr>
+
+            <tr> 
+            <td> h1 p{}</td>
+            <td> Selector de descendencia, Este selector <br> funciona con los selectores de tipo, <br> clase y de identificador. Este nos indica <br> que toda etiqueta descendientes, recibirá <br> un estilo.</td>
+            </tr>           
+
+        </table>
+
+    </div>
+
+    <h1 class="tipos-e">Tipos de estilos</h1>
+
+    <div class="estilos">
+        <p>Para que puedas empezar a darle tus propios estilos a tu pagina, tienes que saber cuales son y para que son. Aquí te dejaremos algunos de ellos y para que sirven. <br><br> Los estilos principales que debes aprender son:  <br><br>-Tamaño (la altura y el ancho) <br> -Color de letras <br> -Color de fondo <br> -Tipo de letra (fuente de letra) <br> -Posición  <br>-Borde</p>
+    </div>
+
+    <p class="style">Estilos</p>
+    <div class="como-usar-codigos"><p>Para que empieces a usar tus estilos, recuerda que deberán ir dentro de las llaves que se utilizan al llamar un selector en css.</p></div>
+
+    <div class="style-ejemplo">
+        <p>TAMAÑO  <br><br>
+            <div class="contenedor-estilos">Ancho
+                <div class="ancho">Width: 200px;</div> <br>Altura 
+                <div class="altura">Height:200px;</div>
+            </div>
+        </p>
+    </div>
+
+    <h1 class="colores">Colores</h1>
+    <p class="colores">Los colores se pueden poner de dos formas, con el nombre del color en ingles o por su código.</p>
+
+    <div class="style-ejemplo">
+        <p>COLOR DE LETRA <br><br> 
+            <div class="contenedor-estilos"> 
+                Nombre<div class="letra-nombre"><p>Color:yellow;</p></div>
+                Código<div class="letra-codigo"><p>Color:#FFFF00;</p></div>
+            </div>
+        </p>
+    </div>
+
+    <div class="style-ejemplo">
+        <p>COLOR DE FONDO <br><br> 
+            <div class="contenedor-estilos"> 
+                Nombre<div class="fondo-nombre"><p>Background:yellow;</p></div>
+                Código<div class="fondo-codigo"><p>Background:#FFFF00;</p></div>
+            </div>
+        </p>
+    </div>
+
+
+    <div class="style-ejemplo">
+        <p>TIPO DE LETRA <br><br> 
+            <div class="contenedor-estilos">Fuente de letra:<br>Este estilo le dará <br> una mejor tipografía <br> a nuestro texto. <br> En el pondrás la que <br> major te parezca.  
+                <div class="fuente-de-letra">font-family:; </div>
+            </div> 
+        </p>        
+    </div>
+
+
+    <div class="style-ejemplo">
+        <p>POSICIÓN <br><br> 
+            <p>Para usar las posiciones, pondremos el estilo. <br> position: relative;, seguido de la posición <br> que se desee poner.</p>
+            <div class="contenedor-estilos">Posiciones: <br> Dirección a la que <br> se moverá el objeto <br> -left <br>-right <br>-top <br>-bottom 
+                <div class="posicion"> <div class="ejemplo-posicion"><p>position: relative; top:10px;</p></div>
+                    <div class="posicion-arriba"><p>↑  bottom</p></div>
+                    <div class="posicion-abajo"> <p>↓  top</p></div>
+                    <div class="posicion-derecha"><p>→  left</p></div>
+                    <div class="posicion-izquierda"><p>←  right</p></div>
+                </div>
+            </div>
+        </p>
+    </div>
+
+
+    <div class="style-ejemplo">
+        <p> BORDES <br><br>
+            <p>Los bordes son necesarios como en casos que quieras <br> crear una figura como un circulo. <br> Hay dos tipos de radios que podemos usar. <br> -border <br> -border-radius</p>
+             <div class="contenedor-estilos">
+                <div class="contenedor-bordes">
+                    <div class="borde">
+                       <p>border: 2px solid blue;</p>
+                    </div>                
+                    <div class="borde-radius">
+                       <p>border-radius: 50%;</p>
+                    </div>    
+                </div>
+             </div>
+        </p>
+    </div>
+
+     <hr>
+    <footer>
+        <p>&copy; 2024 < Page.Code/> | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
