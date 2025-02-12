@@ -447,6 +447,11 @@ article {
   background-size: cover;
 }
 
+.proyectos .proyecto:nth-child(3) .img{
+  background: url(img/CN.png) no-repeat center center;
+  background-size: cover;
+}
+
 
 
 
@@ -490,16 +495,6 @@ article {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-
-
-
-
-
-
-
-
-
-
 
 .Redes {
   height: 70vh;
@@ -705,6 +700,10 @@ article {
   }
 
   .proyectos .proyecto:nth-child(2) .img{
+    background: none;
+  }
+
+  .proyectos .proyecto:nth-child(3) .img{
     background: none;
   }
 
