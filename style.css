@@ -18,10 +18,16 @@ header a {
 
 body {
 
-  background: #000428;
+  /* background: #000428;
   background: -webkit-linear-gradient(to right, #004e92, #000428);
-  background: linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428); */
+
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: white;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 header {
@@ -45,13 +51,13 @@ main {
 
 .presentacion h1 {
   font-size: 60px;
-  color: cyan;
-  text-shadow: 0 0 30px cyan;
+  color: #157585;
+  /* text-shadow: 0 0 30px white; */
   margin-bottom: 20px;
 }
 
 .presentacion p {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .carta {
@@ -437,7 +443,7 @@ article {
   display: none;
 }
 
-.proyectos .proyecto:nth-child(1) .img{
+.proyectos .proyecto:nth-child(1) .img{ 
   background: url(img/LD.png) no-repeat center center;
   background-size: cover;
 }
@@ -448,16 +454,9 @@ article {
 }
 
 .proyectos .proyecto:nth-child(3) .img{
-  background: url(img/CN.png) no-repeat center center;
+  background: url(img/LX.png) no-repeat center center;
   background-size: cover;
 }
-
-/* .proyectos .proyecto:nth-child(4) .img{
-  background: url(img/Logo_LX.png) no-repeat center center;
-  background-size: cover;
-} */
-
-
 
 
 /* .proyectos .img img{
